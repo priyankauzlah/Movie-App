@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_main_color"
+    tools:context=".activity.DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_detail_movie_backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_230dp"
+            android:contentDescription="@string/image_view"
+            android:src="@drawable/movie_backdrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/ib_detail_back"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:background="@drawable/background_button_purple"
+            android:contentDescription="@string/image_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_back" />
+
+        <ImageView
+            android:id="@+id/iv_detail_movie_poster"
+            android:layout_width="@dimen/_125dp"
+            android:layout_height="@dimen/_190dp"
+            android:layout_marginTop="@dimen/_64dp"
+            android:contentDescription="@string/image_view"
+            android:foregroundGravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.548"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_detail_movie_backdrop"
+            app:srcCompat="@drawable/movie_poster" />
+
+        <TextView
+            android:id="@+id/tv_detail_movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/the_umbrella_academy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_detail_movie_poster" />
+
+        <TextView
+            android:id="@+id/tv_detail_movie_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/action_adventure_sci_fi_fantasy"
+            android:textColor="@color/main_gray"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_detail_movie_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_movie_title" />
+
+        <TextView
+            android:id="@+id/tv_detail_movie_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_15_02_2021"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_detail_movie_genre"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_movie_genre" />
+
+        <TextView
+            android:id="@+id/tv_detail_movie_divider"
+            android:layout_width="@dimen/_4dp"
+            android:layout_height="@dimen/_21dp"
+            android:layout_marginStart="@dimen/_4dp"
+            android:text="@string/_l"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_detail_movie_release"
+            app:layout_constraintStart_toEndOf="@+id/tv_detail_movie_release"
+            app:layout_constraintTop_toTopOf="@+id/tv_detail_movie_release" />
+
+        <ImageView
+            android:id="@+id/iv_detail_movie_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4dp"
+            android:layout_marginTop="@dimen/_1dp"
+            android:contentDescription="@string/image_view"
+            app:layout_constraintStart_toEndOf="@+id/tv_detail_movie_divider"
+            app:layout_constraintTop_toTopOf="@+id/tv_detail_movie_divider"
+            app:layout_constraintVertical_bias="0.028"
+            app:srcCompat="@drawable/ic_star" />
+
+        <TextView
+            android:id="@+id/tv_detail_movie_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_8_8"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_detail_movie_divider"
+            app:layout_constraintStart_toEndOf="@+id/iv_detail_movie_star"
+            app:layout_constraintTop_toTopOf="@+id/tv_detail_movie_divider" />
+
+        <TextView
+            android:id="@+id/tv_detail_movie_synopsis_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/synopsis"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_detail_movie_release"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_movie_release" />
+
+        <TextView
+            android:id="@+id/tv_detail_movie_synopsis_inside"
+            android:layout_width="@dimen/_376dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/a_dysfunctional_family_of_superheroes_comes_together_to_solve_the_mystery_of_their_father_s_death_the_threat_of_the_apocalypse_and_more"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_detail_movie_synopsis_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_detail_movie_synopsis_title" />
+
+        <TextView
+            android:id="@+id/tv_detail_movie_trailer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/trailer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_detail_movie_synopsis_inside"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_movie_synopsis_inside" />
+
+        <ImageView
+            android:id="@+id/iv_detail_movie_trailer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150dp"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginEnd="@dimen/_90dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_detail_movie_trailer_title"
+            app:layout_constraintHorizontal_bias="0.086"
+            app:layout_constraintStart_toStartOf="@+id/tv_detail_movie_trailer_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_movie_trailer_title"
+            app:srcCompat="@drawable/youtube_trailer" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

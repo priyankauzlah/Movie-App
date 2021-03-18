@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "491725144569",
+    "project_id": "movieapp-uzlah-idn",
+    "storage_bucket": "movieapp-uzlah-idn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491725144569:android:9df3aeebb0d18727edbd28",
+        "android_client_info": {
+          "package_name": "com.uzlahpri.movieapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491725144569-qvqqgrr4ma74tgsnqp2h4as09mc7hm1q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uzlahpri.movieapp",
+            "certificate_hash": "d66d6a93f666811f17aa77685228c0ef8556ce83"
+          }
+        },
+        {
+          "client_id": "491725144569-ebc69i3d6gufo8hvvha6fesq0jlqg1rm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4lnFqtCLjUe1QrjI3w77sMLM2WytTWMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491725144569-ebc69i3d6gufo8hvvha6fesq0jlqg1rm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
